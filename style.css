@@ -1,0 +1,43 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+
+#pokeList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+article {
+    border: 2px solid black;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: border-color 0.3s;
+}
+
+article:hover {
+    border-color: green;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.stats {
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.selected {
+    border-color: green !important;
+}
+
+#battleContainer {
+    margin-top: 20px;
+}

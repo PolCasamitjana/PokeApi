@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokeApi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <h1>Hello PokeAPI</h1>
+    <li>Elige cuántos Pokemon quieres</li>
+    <input type="number" id="numPoke">
+    <button id="addPoke">Get Pokemons</button>
+    <div id="pokeList"></div>
+
+    <div id="battleContainer">
+        <div id="pokemon1Container">
+            <h3>Pokemon 1</h3>
+            <select id="pokemon1Select"></select>
+        </div>
+        <div id="pokemon2Container">
+            <h3>Pokemon 2</h3>
+            <select id="pokemon2Select"></select>
+        </div>
+        <button id="battleButton">Battle!</button>
+        <p id="battleResult"></p>
+    </div>
+
+    <template id="poke-template">
+        <article onclick="selectPokemon(this)">
+            <h2 id="name"></h2>
+            <img src="" alt="">
+            <p id="types"></p>
+            <p class="stats" id="attack"></p>
+            <p class="stats" id="defense"></p>
+        </article>
+    </template>
+    <script src="script.js"></script>
+</body>
+</html>
